@@ -1,6 +1,6 @@
 #[derive(Debug, PartialEq, Clone, Copy)]
 pub enum Token {
-    Illegal,
+    Illegal, // 例外
     EOF,  // ファイルの終端
     Number(i32),
     Plus,
