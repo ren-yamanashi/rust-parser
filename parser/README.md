@@ -1,0 +1,27 @@
+1. Tokenの実装
+2. Lexerの実装
+    - 構造体の定義
+        - input
+            - 全体としての入力値
+            - 1文字ずつの入力値
+        - 現在位置情報 
+    - メソッド、関数の実装
+        - new
+        - read
+        - peek処理(次の文字を覗き見する)
+        - 空白処理(空白時は処理をスキップする)
+        - 数値の判定(小数点`.`もOKとする)
+        - 1文字戻る処理
+        - 文字列を数値にする処理
+        - next
+3. 構文解析(AST)の実装
+4. 評価器の実装
+    - 構造体の定義
+        - lexer
+        - 現在のtoken
+        - 次のtoken(peekedToken)
+    - メソッド、関数の実装
+        - new
+        - next
+        - parse_unary
+        - parse_by_current_precedence, parse_binary
